@@ -24,3 +24,9 @@ Test localhost api in your browser by navigating to
 ```
 http://localhost:5000/api/v1/resources/books/all
 ```
+
+## Heroku
+
+- heroku container:login
+- heroku container:push web --app testa-api-ufma
+- heroku container:release web --app testa-api-ufma
