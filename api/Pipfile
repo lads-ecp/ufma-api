@@ -1,0 +1,29 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+flask = "*"
+flask-restful = "*"
+flask-sqlalchemy = "*"
+flask_restplus = "*"
+flask-cors = "*"
+flask_basicauth  = "*"
+flask_jwt  = "*"
+requests = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+bs4 = "*"
+unidecode  = "*"
+pymarc  = "*"
+rdflib  = "*"
+gunicorn = "*"
+crdf_serializer = "*"
+
+[requires]
+python_version = "3.7"
+
+[dev-packages]
+pylint = "*"
+flake8 = "*"

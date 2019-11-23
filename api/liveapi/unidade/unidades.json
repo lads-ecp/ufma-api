@@ -1,0 +1,56 @@
+[
+  {
+    "sigla": "CCET",
+    "nome": "Centro de Ciências Exatas e Tecnologia",
+    "url_sigaa": "https://sigaa.ufma.br/sigaa/public/centro/portal.jsf?lc=pt_BR&id=966",
+    "apresentacao": "Nenhum conteúdo disponível até o momento",
+    "diretor": "RIDVAN NUNES FERNANDES",
+    "siape_diretor": "407265",
+    "codigo": "966"
+  },
+  {
+    "sigla": "CCBS",
+    "nome": "Centro de Ciências Biológicas e da Saúde",
+    "url_sigaa": "https://sigaa.ufma.br/sigaa/public/centro/portal.jsf?lc=pt_BR&id=904",
+    "apresentacao": "Nenhum conteúdo disponível até o momento",
+    "diretor": "ROSANE NASSAR MEIRELES GUERRA LIBERIO",
+    "siape_diretor": "306484",
+    "codigo": "904"
+  },
+  {
+    "sigla": "CCSO",
+    "nome": "Centro de Ciências Sociais",
+    "url_sigaa": "https://sigaa.ufma.br/sigaa/public/centro/portal.jsf?lc=pt_BR&id=857",
+    "apresentacao": "",
+    "diretor": "LINDALVA MARTINS MAIA MACIEL",
+    "siape_diretor": "407645",
+    "codigo": "857"
+  },
+  {
+    "sigla": "CCH",
+    "nome": "Centro de Ciências Humanas",
+    "url_sigaa": "https://sigaa.ufma.br/sigaa/public/centro/portal.jsf?lc=pt_BR&id=828",
+    "apresentacao": "Nenhum conteúdo disponível até o momento",
+    "diretor": "FRANCISCO DE JESUS SILVA DE SOUSA",
+    "siape_diretor": "6844105",
+    "codigo": "828"
+  },
+
+  {
+    "sigla": "CCAA",
+    "nome": "Centro de Ciências Agrárias e Ambientais",
+    "url_sigaa": "https://sigaa.ufma.br/sigaa/public/programa/apresentacao.jsf?lc=pt_BR&id=1156",
+    "apresentacao": "",
+    "diretor": "",
+    "codigo": "1156"
+  },
+  {
+    "sigla": "CCHNST (PINHEIRO)",
+    "nome": "",
+    "url_sigaa": "https://sigaa.ufma.br/sigaa/public/centro/portal.jsf?lc=pt_BR&id=1393",
+    "apresentacao": "Nenhum conteúdo disponível até o momento",
+    "diretor": "RICKLEY LEANDRO MARQUES",
+    "siape_diretor": "1525392",
+    "codigo": "1393"
+  }
+]

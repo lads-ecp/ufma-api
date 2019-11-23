@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dbo="http://dbpedia.org/data3/.n3#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:vcard="https://www.w3.org/2006/vcard/ns#"
+>
+  <rdf:Description rdf:nodeID="N82b20634efdd4f78ae4cc237bdda97ea">
+    <dbo:abstract>Atualmente é Professor Titular da Universidade Federal do Maranhão, coordenador do Núcleo de Computação Aplicada NCA-UFMA, emembro da SBC (Sociedade Brasileira de Computação) e da ACM (Association for Computing Machinery).</dbo:abstract>
+    <foaf:phone rdf:resource="tel:+55.9833019246"/>
+    <foaf:name>ANSELMO CARDOSO DE PAIVA</foaf:name>
+    <vcard:hasEmail rdf:resource="mailto:paiva@deinf.ufma.br"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <vcard:hasPhoto rdf:resource="https://sigaa.ufma.br//sigaa/verFoto?idFoto=819095&amp;key=42275ee5ce1b90f50aff377fcc0473f9"/>
+  </rdf:Description>
+</rdf:RDF>
