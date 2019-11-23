@@ -6,13 +6,6 @@ from database import db
 
 import os
 
-# live API
-from liveapi.restplus import api as liveapi
-from liveapi.unidade.endpoints import ns as unidade_namespace
-from liveapi.subunidade.endpoints import ns as live_subunidade_namespace
-from liveapi.docente.endpoints import ns as live_docente_namespace
-from liveapi.curso.endpoints import ns as live_curso_namespace
-from liveapi.biblioteca.endpoints import ns as live_biblioteca_namespace
 
 #api
 from api.restplus import api as api
@@ -35,14 +28,8 @@ def configure_app(flask_app):
     CORS(flask_app)
 
 
-liveblueprint = Blueprint('liveapi', __name__, url_prefix='/liveapi/v01')
-liveapi.init_app(liveblueprint)
 
-liveapi.add_namespace(unidade_namespace)
-liveapi.add_namespace(live_subunidade_namespace)
-liveapi.add_namespace(live_docente_namespace)
-liveapi.add_namespace(live_curso_namespace)
-liveapi.add_namespace(live_biblioteca_namespace)
+
 
 
 blueprint = Blueprint('api', __name__, url_prefix='/api/v01')
@@ -57,7 +44,6 @@ app = Flask(__name__)
 configure_app(app)
 
 
-app.register_blueprint(liveblueprint)
 app.register_blueprint(blueprint)
 app.config['SECRET_KEY'] = 'super-secret'
 
