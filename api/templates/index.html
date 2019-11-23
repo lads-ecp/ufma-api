@@ -70,9 +70,7 @@ body {
              <a href="#" class="nav-item is-tab is-active">
               Inicio
             </a>
-            <a href="#liveapi-title" class="nav-item is-tab">
-              Live API
-            </a>
+         
             <a href="#api-title" class="nav-item is-tab">
               API
             </a>
@@ -97,7 +95,7 @@ body {
         <div class="main">
           <div class="title">Principal</div>
           <a href="#" class="item active"><span class="icon"><i class="fa fa-home"></i></span><span class="name">Inicio</span></a>
-          <a href="#liveapi-title" class="item"><span class="icon"><i class="fa fa-folder-o""></i></span><span class="name">LiveAPI</span></a>
+          
           <a href="#api-title" class="item"><span class="icon"><i class="fa fa-folder-o"></i></span><span class="name">API</span></a>
           <a href="http://dadosabertos.ufma.br/" class="item"><span class="icon"><i class="fa fa-folder-o"></i></span><span class="name">Portal Oficial (UFMA)</span></a>
         </div>
@@ -123,12 +121,6 @@ body {
           
           <div id="swagger-ui-api" ></div>
 
-
-          <div class="title is-3"  id="liveapi-title">LiveAPI</div>
-
-          <p>A liveapi faz as consultas acessando diretamente os dados que estão no portal da universidade. Ela tem a vantagem de pegar dados sempre atualizados, e a desvantagem de ter um custo maior de tempo.</p>
-          
-          <div id="swagger-ui-live"></div>
         
       </div>
     </div>
@@ -154,21 +146,7 @@ body {
 <script src="/swaggerui/swagger-ui-standalone-preset.js"></script>
     <script type="text/javascript">
         window.onload = function() {
-            const uilive  = new SwaggerUIBundle({
-                url: "liveapi/v01/swagger.json",
-                validatorUrl: "" || null,
-                dom_id: "#swagger-ui-live",
-                presets: [
-                    SwaggerUIBundle.presets.apis,
-                    SwaggerUIStandalonePreset.slice(1) // No Topbar
-                ],
-                plugins: [
-                    SwaggerUIBundle.plugins.DownloadUrl
-                ],
-                displayOperationId: false,
-                displayRequestDuration: false,
-                docExpansion: "list"
-            })
+           
 
             const uiapi  = new SwaggerUIBundle({
                 url: "api/v01/swagger.json",
