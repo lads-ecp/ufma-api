@@ -1,7 +1,7 @@
 
 from flask_restplus import Resource, reqparse, Api
-
-from api.restplus import api as api
+from flask_restplus import fields
+from endpoints.restplus import api as api
 from flask import request
 from flask import make_response     
 from database.models import Subunidade
@@ -9,8 +9,13 @@ from rdf.models import Subunidade as SubunidadeRDF
 from crdf_serializer import graph
 from flask.json import jsonify
 
-from api.subunidade.serializer import subunidade_model
+
 from flask_jwt import  jwt_required
+
+subunidade_model = api.model('Subunidade model', {
+    'codigo': fields.String(readOnly=True, description='The unique identifier of a "subunidade"'),
+    'nome': fields.String(required=True, description='Nome do docente'),
+})
 
 ns = api.namespace('subunidade', description='Operations related to "subunidade"')
 

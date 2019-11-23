@@ -1,7 +1,7 @@
 
 from flask_restplus import Resource, reqparse, Api
 
-from api.restplus import api as api
+from endpoints.restplus import api as api
 from flask.json import jsonify
 from database.models import Discente
 from database import db

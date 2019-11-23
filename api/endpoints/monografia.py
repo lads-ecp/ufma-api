@@ -1,7 +1,7 @@
 
 from flask_restplus import Resource, reqparse, Api
 from flask.json import jsonify
-from api.restplus import api as api
+from endpoints.restplus import api as api
 
 from database.models import Monografia
 from database import db

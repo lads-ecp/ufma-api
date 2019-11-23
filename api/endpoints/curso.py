@@ -4,7 +4,7 @@ from flask_jwt import  jwt_required
 
 from flask.json import jsonify
 
-from api.restplus import api as api
+from endpoints.restplus import api as api
 from flask import request
 from flask import make_response 
 

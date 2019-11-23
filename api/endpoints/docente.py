@@ -5,11 +5,12 @@ from flask_restplus import Resource, reqparse, Api
 from flask import request
 from flask import make_response 
 from flask_jwt import  jwt_required
+from flask_restplus import fields
 
-from api.restplus import api as api
+from endpoints.restplus import api as api
 
 from database.models import Docente as docenteModelDB
-from api.docente.serializer import docente_model
+
 
 from rdf.models import Docente as docenteModelRDF
 from crdf_serializer import graph
@@ -25,6 +26,12 @@ def grapho_f (l):
         for s, p, o in o.g:
             g.add ((s,p,o))
     return g
+
+
+docente_model = api.model('Blog category', {
+    'siape': fields.Integer(readOnly=True, description='The unique identifier of a blog category'),
+    'nome': fields.String(required=True, description='Nome do docente'),
+})
 
 @api.representation('application/xml')
 def xml(data, code, headers):

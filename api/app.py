@@ -8,12 +8,12 @@ import os
 
 
 #api
-from api.restplus import api as api
-from api.docente.endpoints import ns as docente_namespace
-from api.subunidade.endpoints import ns as subunidade_namespace
-from api.curso.endpoints import ns as curso_namespace
-from api.discente.endpoints import ns as discente_namespace
-from api.monografia.endpoints import ns as monografia_namespace
+from endpoints.restplus import api as api
+from endpoints.docente import ns as docente_namespace
+from endpoints.subunidade import ns as subunidade_namespace
+from endpoints.curso import ns as curso_namespace
+from endpoints.discente import ns as discente_namespace
+from endpoints.monografia import ns as monografia_namespace
 
 import settings
 
