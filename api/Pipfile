@@ -21,6 +21,7 @@ rdflib  = "*"
 gunicorn = "*"
 simpot = "*"
 ufma-scrapper = "*"
+uwsgi = "*"
 
 [requires]
 python_version = "3.7"
