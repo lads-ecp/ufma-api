@@ -33,7 +33,7 @@ class MonografiaItem(Resource):
     def get(self, codigo):
         if Monografia.query.filter(Monografia.codigo == codigo).first():
             return Monografia.query.filter(Monografia.codigo == codigo).one().json()
-        return {'Message': 'Monografia with the codigo {} is not found'.format(cdigo)}
+        return {'Message': 'Monografia with the codigo {} is not found'.format(codigo)}
 
     @api.response(201, 'Monografia successfully created.')
     @jwt_required()

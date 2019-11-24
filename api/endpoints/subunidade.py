@@ -37,7 +37,7 @@ class SubunidadeItem(Resource):
             subunidade_rdf = SubunidadeRDF(subunidade.codigo, subunidade.nome)
 
             if request.headers['accept'] == 'application/xml':
-                grafo = graph_f(subunidade_rdf)
+                grafo = graph(subunidade_rdf)
                 return xml(grafo.serialize().decode(), 201, {'Content-Type': 'application/xml'})
             else:
                 # return json(docente.json(), 201,  {'Content-Type': 'application/json'}) # talvez nao precise isso
