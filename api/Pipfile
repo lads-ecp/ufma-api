@@ -20,6 +20,7 @@ pymarc  = "*"
 rdflib  = "*"
 gunicorn = "*"
 simpot = "*"
+ufma-scrapper = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fa558cd76da48e40baff80d639a5b40a103a4fc09847f337ea9b3052c54b75a3"
+            "sha256": "658abf24df69cbb68867443fe6aace6aa28cf96791546b0cea84112baa4f3d86"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -320,6 +320,14 @@
                 "sha256:afa5541e9dea8ad0014251bc9d56171ca3d8b130c9627c6cb3681cff30be3f8a"
             ],
             "version": "==1.3.11"
+        },
+        "ufma-scrapper": {
+            "hashes": [
+                "sha256:b4cadbffe103630cd4a2476eda54073c8c07f246edb631e181632a02c24aebad",
+                "sha256:fefef73da17cd80d36a926565713cf0e083827d877d7363d9ece86b9033af545"
+            ],
+            "index": "pypi",
+            "version": "==0.0.11"
         },
         "unidecode": {
             "hashes": [

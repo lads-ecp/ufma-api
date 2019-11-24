@@ -27,6 +27,12 @@ http://localhost:5000/api/v1/resources/books/all
 
 ## Heroku
 
+- docker build -f Dockerfile.myflask -t myflask .
+docker-compose up --build
+
 - heroku container:login
 - heroku container:push web --app testa-api-ufma
 - heroku container:release web --app testa-api-ufma
+
+
+- docker build -f Dockerfile.myflask -t myflask .
