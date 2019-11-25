@@ -28,17 +28,16 @@ db.create_all()
 
 
 
-
-
-
 subunidades = get_subunidades()
 
-## subunidades e docentes
-for sub in subunidades: #[{"codigo":"1227"}]:
+
+start = 0
+for sub in subunidades[start:]: 
     #s = Subunidade (sub)
     #save_to(s, db)
     docentes = get_docentes(sub["codigo"])
-    print (sub["codigo"])
+    print (start, sub["codigo"])
+    start = start + 1
     for docente in docentes:
         print ("loading ", docente["siape"])
         docente_detail = get_docente(docente["siape"])
@@ -46,10 +45,13 @@ for sub in subunidades: #[{"codigo":"1227"}]:
         docente_detail["siape"] = docente["siape"].replace ("&","")
         print (docente_detail)
         doc = Docente(docente_detail)
-        save_to(doc, db)
+        try:
+            save_to(doc, db)
+        except erro:
+            print (erro)
 
 
-'''
+
 cursos = get_cursos()
 
 # cursos e discentes
