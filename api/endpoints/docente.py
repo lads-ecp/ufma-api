@@ -7,8 +7,7 @@ from database.models import Docente as docenteModelDB
 from rdf.models import Docente as docenteModelRDF
 from simpot import graph
 from rdflib import Graph
-import requests
-from requests.api import request
+from flask import request
 from flask.json import jsonify
 
 ns = api.namespace('docente', description='Operations related to "docente"')

@@ -29,11 +29,31 @@ db.create_all()
 
 
 
-cursos = get_cursos()
+
+
 subunidades = get_subunidades()
 
+## subunidades e docentes
+for sub in subunidades: #[{"codigo":"1227"}]:
+    #s = Subunidade (sub)
+    #save_to(s, db)
+    docentes = get_docentes(sub["codigo"])
+    print (sub["codigo"])
+    for docente in docentes:
+        print ("loading ", docente["siape"])
+        docente_detail = get_docente(docente["siape"])
+        docente_detail["codigo_subunidade"] = docente["codigo_subunidade"]
+        docente_detail["siape"] = docente["siape"].replace ("&","")
+        print (docente_detail)
+        doc = Docente(docente_detail)
+        save_to(doc, db)
+
+
+'''
+cursos = get_cursos()
+
 # cursos e discentes
-for curso in cursos[1:10]:
+for curso in cursos:
     c = Curso (curso)
     save_to(c, db)
     discentes = get_discentes_ativos(c.codigo)["data"]
@@ -44,9 +64,9 @@ for curso in cursos[1:10]:
         #print (d)
 
 # monografias
-for ano in range(2017,2018):
+for ano in range(2014,2018):
     cod_monografia = 1
-    for curso in cursos[100:102]:
+    for curso in cursos:
         #print (curso)
         monografias = get_monografias (curso["codigo"], str(ano))["data"]
         for monografia in monografias:
@@ -58,20 +78,5 @@ for ano in range(2017,2018):
             cod_monografia = cod_monografia + 1
             save_to(m, db)
 
-## subunidades e docentes
-for sub in subunidades[1:4]:
-    s = Subunidade (sub)
-    save_to(s, db)
-    docentes = get_docentes(sub["codigo"])
-    #print (sub["codigo"])
-    for docente in docentes[1:5]:
-        docente_detail = get_docente(docente["siape"])
-        docente_detail["codigo_subunidade"] = docente["codigo_subunidade"]
-        print (docente_detail)
-        doc = Docente(docente_detail)
-        save_to(doc, db)
 
-
-    
-
-
+'''

@@ -14,4 +14,6 @@ testando ...
 
 http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/
 
+https://medium.com/@shamir.stav_83310/dockerizing-a-flask-mysql-app-with-docker-compose-c4f51d20b40d
+
 (venv) $ python setup.py develop (venv) $ python rest_api_demo/app.py
