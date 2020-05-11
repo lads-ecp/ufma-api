@@ -36,3 +36,8 @@ docker-compose up --build
 
 
 - docker build -f Dockerfile.myflask -t myflask .
+
+
+# gerar usuaário
+
+https://gist.github.com/profsergiocosta/2c4910762c54046497415ac78e030e52
